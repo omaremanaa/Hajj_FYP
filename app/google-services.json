@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "895785410011",
+    "project_id": "hajj-dcf89",
+    "storage_bucket": "hajj-dcf89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895785410011:android:efcc02e07e59642f09dbfe",
+        "android_client_info": {
+          "package_name": "com.example.hajj_fyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895785410011-9h37fusl39m8ufafsmooahmtnk5314gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3zXJSlANh-udlIVo9FcqyZP1w5MEhqoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895785410011-9h37fusl39m8ufafsmooahmtnk5314gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

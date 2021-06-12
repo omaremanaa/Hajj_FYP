@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/refereshlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/coordinatorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/layout_bg">
+                <TextView
+                    android:id="@+id/CurrentDatehijri"
+                    android:layout_width="158dp"
+                    android:layout_height="33dp"
+                    android:text="HijriDate"
+                    android:textColor="#F8EFEF"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.233"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.072" />
+
+                <TextView
+                    android:id="@+id/currentLocationMenu"
+                    android:layout_width="158dp"
+                    android:layout_height="33dp"
+                    android:gravity="top"
+                    android:text="Current Location"
+                    android:textColor="#F8EFEF"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.233"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.323" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="55dp"
+                    android:layout_height="34dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.011"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.318"
+                    app:srcCompat="@drawable/ic_placeholder" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="55dp"
+                    android:layout_height="34dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.011"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.066"
+                    app:srcCompat="@drawable/ic_calendar" />
+
+                <TextView
+                    android:id="@+id/currentDategregorian"
+                    android:layout_width="158dp"
+                    android:layout_height="33dp"
+                    android:gravity="right"
+                    android:text="GregorianDate"
+                    android:textColor="#F8EFEF"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.936"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.072" />
+
+                <TextView
+                    android:id="@+id/currentPrayertime"
+                    android:layout_width="278dp"
+                    android:layout_height="85dp"
+                    android:gravity="center"
+                    android:textColor="#C58714"
+                    android:textSize="60sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.916" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/layout_bg">
+
+                <CheckBox
+                    android:id="@+id/fajrtime"
+                    android:layout_width="371dp"
+                    android:layout_height="59dp"
+                    android:paddingLeft="@dimen/padding_checkbox"
+                    android:text="Fajr"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.043" />
+
+                <CheckBox
+                    android:id="@+id/dhurtime"
+                    android:layout_width="371dp"
+                    android:layout_height="59dp"
+                    android:paddingLeft="@dimen/padding_checkbox"
+                    android:text="Dhur"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.24" />
+
+                <CheckBox
+                    android:id="@+id/asrtime"
+                    android:layout_width="371dp"
+                    android:layout_height="59dp"
+                    android:paddingLeft="@dimen/padding_checkbox"
+                    android:text="Asr"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.44" />
+
+                <CheckBox
+                    android:id="@+id/eishatime"
+                    android:layout_width="371dp"
+                    android:layout_height="59dp"
+                    android:paddingLeft="@dimen/padding_checkbox"
+                    android:text="Eisha"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.867" />
+
+                <CheckBox
+                    android:id="@+id/maghribtime"
+                    android:layout_width="378dp"
+                    android:layout_height="57dp"
+                    android:paddingLeft="@dimen/padding_checkbox"
+                    android:text="Maghrib"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.606"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.653" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
