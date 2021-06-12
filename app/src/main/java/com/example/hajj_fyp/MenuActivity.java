@@ -56,7 +56,8 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawerLayout;
     DatabaseReference databaseReference, locationreference;
     FusedLocationProviderClient fusedLocationProviderClient;
-    String stringLatitude,stringLongitude;
+    String stringLatitude = "24.713172";
+    String stringLongitude = "46.623758";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
