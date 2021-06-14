@@ -56,8 +56,8 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawerLayout;
     DatabaseReference databaseReference, locationreference;
     FusedLocationProviderClient fusedLocationProviderClient;
-    String stringLatitude = "24.713172";
-    String stringLongitude = "46.623758";
+    String locationlat = "0";
+    String locationlongt = "0";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +68,6 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
         getSupportActionBar().setTitle("Piligrim's Mate");
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         databaseReference = database.getReference("TimeZone");
-      
         drawerLayout = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -173,34 +172,107 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.nav_firstlocation:
-                String uri = "http://maps.google.com/maps?saddr="+stringLatitude+","+stringLongitude+"&daddr=21.386740,39.901112";
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-                startActivity(intent);
+                locationreference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                        locationlat = String.valueOf(snapshot.child("LocationLat").getValue());
+                        locationlongt = String.valueOf(snapshot.child("LocationLong").getValue());
+                        String uri = "http://maps.google.com/maps?saddr="+locationlat+","+locationlongt+"&daddr=21.386740,39.901112";
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                        startActivity(intent);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+                    }
+                });
                 break;
             case R.id.nav_secondlocation:
-                String uri2 = "http://maps.google.com/maps?saddr="+stringLatitude+","+stringLongitude+"&daddr=21.389050,39.937050";
-                Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse(uri2));
-                startActivity(intent2);
+                locationreference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                        locationlat = String.valueOf(snapshot.child("LocationLat").getValue());
+                        locationlongt = String.valueOf(snapshot.child("LocationLong").getValue());
+                        String uri2 = "http://maps.google.com/maps?saddr="+locationlat+","+locationlongt+"&daddr=21.389050,39.937050";
+                        Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse(uri2));
+                        startActivity(intent2);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+                    }
+                });
                 break;
             case R.id.nav_thirdlocation:
-                String uri3 = "http://maps.google.com/maps?saddr="+stringLatitude+","+stringLongitude+"&daddr=21.384170,39.876020";
-                Intent intent3 = new Intent(Intent.ACTION_VIEW, Uri.parse(uri3));
-                startActivity(intent3);
+                locationreference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                        locationlat = String.valueOf(snapshot.child("LocationLat").getValue());
+                        locationlongt = String.valueOf(snapshot.child("LocationLong").getValue());
+                        String uri3 = "http://maps.google.com/maps?saddr="+locationlat+","+locationlongt+"&daddr=21.384170,39.876020";
+                        Intent intent3 = new Intent(Intent.ACTION_VIEW, Uri.parse(uri3));
+                        startActivity(intent3);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+                    }
+                });
                 break;
             case R.id.nav_fourthlocation:
-                String uri4 = "http://maps.google.com/maps?saddr="+stringLatitude+","+stringLongitude+"&daddr=21.359170,39.972120";
-                Intent intent4 = new Intent(Intent.ACTION_VIEW, Uri.parse(uri4));
-                startActivity(intent4);
+                locationreference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                        locationlat = String.valueOf(snapshot.child("LocationLat").getValue());
+                        locationlongt = String.valueOf(snapshot.child("LocationLong").getValue());
+                        String uri4 = "http://maps.google.com/maps?saddr="+locationlat+","+locationlongt+"&daddr=21.359170,39.972120";
+                        Intent intent4 = new Intent(Intent.ACTION_VIEW, Uri.parse(uri4));
+                        startActivity(intent4);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+                    }
+                });
                 break;
             case R.id.nav_fifthlocation:
-                String uri5 = "http://maps.google.com/maps?saddr="+stringLatitude+","+stringLongitude+"&daddr=21.421490,39.857680";
-                Intent intent5 = new Intent(Intent.ACTION_VIEW, Uri.parse(uri5));
-                startActivity(intent5);
+                locationreference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                        locationlat = String.valueOf(snapshot.child("LocationLat").getValue());
+                        locationlongt = String.valueOf(snapshot.child("LocationLong").getValue());
+                        String uri5 = "http://maps.google.com/maps?saddr="+locationlat+","+locationlongt+"&daddr=21.421490,39.857680";
+                        Intent intent5 = new Intent(Intent.ACTION_VIEW, Uri.parse(uri5));
+                        startActivity(intent5);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+                    }
+                });
+
                 break;
             case R.id.nav_sixthlocation:
-                String uri6 = "http://maps.google.com/maps?saddr="+stringLatitude+","+stringLongitude+"&daddr=21.42583,39.86538";
-                Intent intent6 = new Intent(Intent.ACTION_VIEW, Uri.parse(uri6));
-                startActivity(intent6);
+                locationreference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                        locationlat = String.valueOf(snapshot.child("LocationLat").getValue());
+                        locationlongt = String.valueOf(snapshot.child("LocationLong").getValue());
+                        String uri6 = "http://maps.google.com/maps?saddr="+locationlat+","+locationlongt+"&daddr=21.42583,39.86538";
+                        Intent intent6 = new Intent(Intent.ACTION_VIEW, Uri.parse(uri6));
+                        startActivity(intent6);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+                    }
+                });
                 break;
             case R.id.nav_setting:
                 Intent settingintent = new Intent(this,SettingsActivity.class);
@@ -254,7 +326,11 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 String city = addresses.get(0).getLocality();
+                                String lat = String.valueOf( addresses.get(0).getLatitude());
+                                String longt = String.valueOf(addresses.get(0).getLongitude());
                                 databaseReference.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("Location").setValue(city);
+                                databaseReference.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("LocationLat").setValue(lat);
+                                databaseReference.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("LocationLong").setValue(longt);
                             }
 
                             @Override
@@ -271,4 +347,5 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
         });
 
     }
+
 }

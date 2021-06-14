@@ -12,6 +12,8 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -23,6 +25,7 @@ import android.widget.Spinner;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -31,7 +34,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
@@ -98,6 +105,9 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
                 locationmanu = findViewById(R.id.locationmanual);
                 String located = locationmanu.getText().toString();
+                GeoLocation geoLocation = new GeoLocation();
+                geoLocation.getAddress(located,getApplicationContext(),new GeoHandler());
+
 
                 //Validate for Location
                 if (located.isEmpty()||located=="") {
@@ -228,7 +238,11 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 String city = addresses.get(0).getLocality();
+                                String lat = String.valueOf( addresses.get(0).getLatitude());
+                                String longt = String.valueOf(addresses.get(0).getLongitude());
                                 databaseReference.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("Location").setValue(city);
+                                databaseReference.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("LocationLat").setValue(lat);
+                                databaseReference.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("LocationLong").setValue(longt);
                                 locationmanu.setText(city);
                             }
 
@@ -244,5 +258,36 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
                 }
             }
         });
+    }
+
+    private class GeoHandler extends Handler {
+        @Override
+        public void handleMessage(@NonNull Message msg) {
+            String lat;
+            String latitudee;
+            String longitudee;
+            String [] longandlat;
+            switch (msg.what){
+                case 1:
+
+                    Bundle bundle = msg.getData();
+                    lat =bundle.getString("Location");
+                    longandlat = lat.split("&");
+                    HashMap hashMap = new HashMap();
+                    hashMap.put("LocationLat", longandlat[0]);
+                    hashMap.put("LocationLong", longandlat[1]);
+                    databaseReference.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
+                        @Override
+                        public void onSuccess(Object o) {
+
+                        }
+                    });
+
+                    break;
+                default:
+                    latitudee = null;
+                    longitudee = null;
+            }
+        }
     }
 }
