@@ -40,34 +40,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.449" />
-<com.google.android.material.textfield.TextInputLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.515"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.526"
-    app:passwordToggleEnabled="true"
-    app:boxBackgroundColor="@android:color/transparent"
-    android:background="@android:color/transparent">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/editTextTextPassword3"
-        android:layout_width="378dp"
-        android:layout_height="60dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:boxBackgroundColor="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" />
-</com.google.android.material.textfield.TextInputLayout>
-<ImageView
+        app:layout_constraintVertical_bias="0.526"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextPassword3"
+            android:layout_width="378dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.526" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
         android:id="@+id/imageView5"
         android:layout_width="252dp"
         android:layout_height="162dp"

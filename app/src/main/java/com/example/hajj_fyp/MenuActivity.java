@@ -328,6 +328,7 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
                                 String city = addresses.get(0).getLocality();
                                 String lat = String.valueOf( addresses.get(0).getLatitude());
                                 String longt = String.valueOf(addresses.get(0).getLongitude());
+                                String timezone = String.valueOf(addresses.get(0).getLongitude());
                                 databaseReference.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("Location").setValue(city);
                                 databaseReference.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("LocationLat").setValue(lat);
                                 databaseReference.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("LocationLong").setValue(longt);
