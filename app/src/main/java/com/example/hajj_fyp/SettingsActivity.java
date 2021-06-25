@@ -93,6 +93,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
             public void onClick(View v) {
                 if (ActivityCompat.checkSelfPermission(SettingsActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
                     getLocation();
+
                 } else {
                     ActivityCompat.requestPermissions(SettingsActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
                 }
@@ -118,9 +119,12 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
                 databaseReference.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("Location").setValue(located);
                 startActivity(new Intent(SettingsActivity.this, MenuActivity.class));
 
+                return;
+
             }
 
         });
+
     }
 
     @Override

@@ -301,25 +301,12 @@ public class PrayerTracker extends AppCompatActivity {
                                         Date d4 = _24HourSDF.parse(Isha);
                                         Date currentdate = new Date();
                                         try {
-                                            if(_24HourSDF.parse(_24HourSDF.format(currentdate)).before(_24HourSDF.parse(_24HourSDF.format(d4))))
+                                            if(_24HourSDF.parse(_24HourSDF.format(currentdate)).before(_24HourSDF.parse(_24HourSDF.format(d))))
                                             {
-                                                prayer5.setEnabled(false);
-                                            }else if (_24HourSDF.parse(_24HourSDF.format(currentdate)).after(_24HourSDF.parse(_24HourSDF.format(d4)))){
-                                                prayer5.setEnabled(true);
+                                                prayer1.setEnabled(false);
                                             }
-                                            if(_24HourSDF.parse(_24HourSDF.format(currentdate)).before(_24HourSDF.parse(_24HourSDF.format(d3))))
-                                            {
-                                                prayer4.setEnabled(false);
-                                            }
-                                            else if (_24HourSDF.parse(_24HourSDF.format(currentdate)).after(_24HourSDF.parse(_24HourSDF.format(d3)))){
-                                                prayer4.setEnabled(true);
-                                            }
-                                            if(_24HourSDF.parse(_24HourSDF.format(currentdate)).before(_24HourSDF.parse(_24HourSDF.format(d2))))
-                                            {
-                                                prayer3.setEnabled(false);
-                                            }
-                                            else if (_24HourSDF.parse(_24HourSDF.format(currentdate)).after(_24HourSDF.parse(_24HourSDF.format(d2)))){
-                                                prayer3.setEnabled(true);
+                                            else if (_24HourSDF.parse(_24HourSDF.format(currentdate)).after(_24HourSDF.parse(_24HourSDF.format(d)))){
+                                                prayer1.setEnabled(true);
                                             }
                                             if(_24HourSDF.parse(_24HourSDF.format(currentdate)).before(_24HourSDF.parse(_24HourSDF.format(d1))))
                                             {
@@ -328,13 +315,30 @@ public class PrayerTracker extends AppCompatActivity {
                                             else if (_24HourSDF.parse(_24HourSDF.format(currentdate)).after(_24HourSDF.parse(_24HourSDF.format(d1)))){
                                                 prayer2.setEnabled(true);
                                             }
-                                            if(_24HourSDF.parse(_24HourSDF.format(currentdate)).before(_24HourSDF.parse(_24HourSDF.format(d))))
+                                            if(_24HourSDF.parse(_24HourSDF.format(currentdate)).before(_24HourSDF.parse(_24HourSDF.format(d2))))
                                             {
-                                                prayer1.setEnabled(false);
+                                                prayer3.setEnabled(false);
                                             }
-                                            else if (_24HourSDF.parse(_24HourSDF.format(currentdate)).after(_24HourSDF.parse(_24HourSDF.format(d)))){
-                                                prayer1.setEnabled(true);
+                                            else if (_24HourSDF.parse(_24HourSDF.format(currentdate)).after(_24HourSDF.parse(_24HourSDF.format(d2)))){
+                                                prayer3.setEnabled(true);
                                             }
+                                            if(_24HourSDF.parse(_24HourSDF.format(currentdate)).before(_24HourSDF.parse(_24HourSDF.format(d3))))
+                                            {
+                                                prayer4.setEnabled(false);
+                                            }
+                                            else if (_24HourSDF.parse(_24HourSDF.format(currentdate)).after(_24HourSDF.parse(_24HourSDF.format(d3)))){
+                                                prayer4.setEnabled(true);
+                                            }
+
+                                            if(_24HourSDF.parse(_24HourSDF.format(currentdate)).before(_24HourSDF.parse(_24HourSDF.format(d4))))
+                                            {
+                                                prayer5.setEnabled(false);
+                                            }else if (_24HourSDF.parse(_24HourSDF.format(currentdate)).after(_24HourSDF.parse(_24HourSDF.format(d4)))){
+                                                prayer5.setEnabled(true);
+                                            }
+
+
+
                                         } catch (ParseException e) {
                                             e.printStackTrace();
                                         }
