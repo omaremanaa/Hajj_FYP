@@ -31,18 +31,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6286933a-1953-4141-938c-d6aa24b85942" name="Default Changelist" comment="final update 15 june">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/hajj_fyp/FAQ_Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/hajj_fyp/FAQ_Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Hajj_FYP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Hajj_FYP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Hajj_FYP.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Hajj_FYP.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_faqactivity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_faqactivity.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/omaremanaa/.android/avd/Nexus_5X_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/omaremanaa/.android/avd/Nexus_5X_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -59,7 +66,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1tqPYRbbkL8BdWFUeW6BlXQup6q" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -67,7 +76,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/example/hajj_fyp" />
+    <property name="recommended.upgrade.do.not.ask.for.version" value="4.2.1" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -100,6 +110,8 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Auto" />
       <Auto>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -190,49 +202,5 @@
     <MESSAGE value="final update 15 june" />
     <MESSAGE value="latest update 16 june" />
     <option name="LAST_COMMIT_MESSAGE" value="latest update 16 june" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1623681296171">
-      <screen x="0" y="25" width="1440" height="830" />
-    </state>
-    <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser/0.25.1440.830@0.25.1440.830" timestamp="1623681296171" />
-    <state x="100" y="125" width="1240" height="631" key="AVDManager" timestamp="1624221218405">
-      <screen x="0" y="25" width="1440" height="831" />
-    </state>
-    <state x="100" y="125" width="1240" height="628" key="AVDManager/0.25.1440.828@0.25.1440.828" timestamp="1623494271882" />
-    <state x="100" y="125" width="1240" height="630" key="AVDManager/0.25.1440.830@0.25.1440.830" timestamp="1623801181178" />
-    <state x="100" y="125" width="1240" height="631" key="AVDManager/0.25.1440.831@0.25.1440.831" timestamp="1624221218405" />
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom" timestamp="1624225504673">
-      <screen x="0" y="25" width="1440" height="831" />
-    </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.25.1440.828@0.25.1440.828" timestamp="1623538717282" />
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.25.1440.830@0.25.1440.830" timestamp="1623762730918" />
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.25.1440.831@0.25.1440.831" timestamp="1624225504673" />
-    <state width="1398" height="212" key="GridCell.Tab.0.center" timestamp="1624225504671">
-      <screen x="0" y="25" width="1440" height="831" />
-    </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.center/0.25.1440.828@0.25.1440.828" timestamp="1623538717280" />
-    <state width="1398" height="212" key="GridCell.Tab.0.center/0.25.1440.830@0.25.1440.830" timestamp="1623762730917" />
-    <state width="1398" height="212" key="GridCell.Tab.0.center/0.25.1440.831@0.25.1440.831" timestamp="1624225504671" />
-    <state width="1398" height="212" key="GridCell.Tab.0.left" timestamp="1624225504671">
-      <screen x="0" y="25" width="1440" height="831" />
-    </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.left/0.25.1440.828@0.25.1440.828" timestamp="1623538717278" />
-    <state width="1398" height="212" key="GridCell.Tab.0.left/0.25.1440.830@0.25.1440.830" timestamp="1623762730917" />
-    <state width="1398" height="212" key="GridCell.Tab.0.left/0.25.1440.831@0.25.1440.831" timestamp="1624225504671" />
-    <state width="1398" height="212" key="GridCell.Tab.0.right" timestamp="1624225504672">
-      <screen x="0" y="25" width="1440" height="831" />
-    </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.right/0.25.1440.828@0.25.1440.828" timestamp="1623538717281" />
-    <state width="1398" height="212" key="GridCell.Tab.0.right/0.25.1440.830@0.25.1440.830" timestamp="1623762730918" />
-    <state width="1398" height="212" key="GridCell.Tab.0.right/0.25.1440.831@0.25.1440.831" timestamp="1624225504672" />
-    <state x="229" y="76" key="SettingsEditor" timestamp="1624220831802">
-      <screen x="0" y="25" width="1440" height="831" />
-    </state>
-    <state x="229" y="76" key="SettingsEditor/0.25.1440.831@0.25.1440.831" timestamp="1624220831802" />
-    <state x="320" y="176" key="Vcs.Push.Dialog.v2" timestamp="1623793121268">
-      <screen x="0" y="25" width="1440" height="830" />
-    </state>
-    <state x="320" y="176" key="Vcs.Push.Dialog.v2/0.25.1440.830@0.25.1440.830" timestamp="1623793121268" />
   </component>
 </project>

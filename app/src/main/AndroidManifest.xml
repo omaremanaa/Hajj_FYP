@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hajj_FYP">
-        <activity android:name=".FAQActivity"></activity>
+        <activity android:name=".FAQActivity"
+            android:parentActivityName=".MenuActivity"/>
         <activity android:name=".GalleryActivity"
             android:parentActivityName=".MenuActivity"/>
         <activity android:name=".DuaActivity"
