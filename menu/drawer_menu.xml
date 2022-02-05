@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="Hajj Locations">
+        <menu>
+            <item android:id="@+id/nav_firstlocation"
+                android:title="Al Haram"/>
+            <item android:id="@+id/nav_secondlocation"
+                android:title="Mina"/>
+            <item android:id="@+id/nav_thirdlocation"
+                android:title="Muzdalifah"/>
+            <item android:id="@+id/nav_fourthlocation"
+                android:title="Arafat"/>
+            <item android:id="@+id/nav_fifthlocation"
+                android:title="Big Jamarah"/>
+            <item android:id="@+id/nav_sixthlocation"
+                android:title="Small Jamarah"/>
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_setting"
+            android:title="Settings"
+            android:icon="@drawable/ic_settings" />
+        <item android:id="@+id/nav_editprofile"
+            android:title="Edit Profile"
+            android:icon="@drawable/ic_profile"/>
+        <item android:id="@+id/nav_emergencynumber"
+            android:title="Emergency"
+            android:icon="@drawable/ic_emergency"/>
+        <item android:id="@+id/nav_contactus"
+            android:title="Contact Us"
+            android:icon="@drawable/ic_contactus"/>
+    </group>
+
+
+
+
+
+</menu>

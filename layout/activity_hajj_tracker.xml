@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refereshlayoutHajj"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/layout_bg">
+
+            <CheckBox
+                android:id="@+id/ihramCheck"
+                android:layout_width="371dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="589dp"
+                android:paddingLeft="@dimen/padding_checkbox"
+                android:text="Ihram"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/tawafandSayCheck"
+                android:layout_width="371dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="89dp"
+                android:layout_marginBottom="527dp"
+                android:text="                      Performing the Welcome\n                                Tawaf and Sa'y"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/arafatCheck"
+                android:layout_width="371dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="207dp"
+                android:layout_marginBottom="409dp"
+                android:text="                  Going to Arafat from Mina"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/minaCheck"
+                android:layout_width="371dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="148dp"
+                android:layout_marginBottom="468dp"
+                android:text="                  Going to Mina from Makkah"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/muzdalifahCheck"
+                android:layout_width="371dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="266dp"
+                android:layout_marginBottom="350dp"
+                android:text="                  Going to Muzdalifah from\n                                    Arafat"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/toMinaCheck"
+                android:layout_width="371dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="325dp"
+                android:layout_marginBottom="291dp"
+                android:text="                              Proceeding to Mina\n                                    from Muzdalifah"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/tawafCheck"
+                android:layout_width="371dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginBottom="116dp"
+                android:text="                           Farewell Tawaf in the \n                             Holy City of Makkah"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/tawafIfadahCheck"
+                android:layout_width="378dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="384dp"
+                android:layout_marginBottom="234dp"
+                android:text="                          Tawaf al-Ifadha in the \n                           Holy City of Makkah"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.606"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/fromMakkahCheck"
+                android:layout_width="378dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="441dp"
+                android:layout_marginBottom="177dp"
+                android:text="                          Returning to Mina from\n                                     Makkah"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.606"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
